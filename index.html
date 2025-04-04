@@ -4,20 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seed Ads</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
     <header>
-        <h1>Seed Ads </h1> <!--Futuramente usar uma imagem-->
-        <p>Semeando sempre o potencial da sua Empresa!</p>
+        <div>
+            <h1>Seed Ads </h1> <!--Futuramente usar uma imagem-->
+        </div>
+        <div>
+            <p>Semeando sempre o potencial da sua Empresa!</p>
+        </div>
+        <nav>
+            <span class="material-symbols-outlined" onclick="mostrarMenu()" id="menu">
+                menu
+                </span>
+            <menu>
+                <a href="#">Sobre nós</a>
+                <a href="#">Fale conosco</a>
+                <a href="#">Nossos serviços</a>
+            </menu>  
+        </nav>
     </header>
-    <menu>
-        
-    </menu>
-    <nav>
-        <a href="#">Sobre nós</a>
-        <a href="#">Fale conosco</a>
-        <a href="#">Nossos serviços</a>
-    </nav>
+    
     <main>
         <section id="welcome">
             <div>
@@ -25,7 +34,7 @@
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis  commodi, sunt distinctio, perferendis quia labore temporibus. Maxime tenetur unde eius velit?</p>
             </div>
             <div>
-                
+                <img src="imagens/tecnologia-250px.png" alt="">
             </div>
         </section>
         <section id="about-us">
@@ -35,5 +44,7 @@
     <footer>
 
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

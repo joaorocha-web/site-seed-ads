@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+:root {
+    --color1: #aee637;
+    --color2: #38c958;
+    --color3: #fffedb;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color3);
+}
+
+header{
+    background-color: white;
+    text-align: center;
+    padding-top: 5px;
+    
+}
+
+header> div>h1{
+    margin-bottom: 10px;
+    color: var(--color1);
+    font-size: 2.2em;
+}
+
+header p{
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+header #menu{
+   
+    display: inline-block;
+    width: 100vw;
+}
+
+nav > span#menu{
+    cursor: pointer;
+}
+
+nav> menu{
+    display: none;
+}
+
+nav> menu> a{
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    
+    color: black;
+}
+
+main{
+    padding-top: 20px;
+}
+
+section#welcome{
+    display: flex;
+}
