@@ -65,4 +65,22 @@ main{
 
 section#welcome{
     display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#welcome div{
+    padding: 5px;
+    
+}
+
+section#welcome> div#chamada{
+    text-align: center;
+    padding: 0px 20px;
+    
+}
+
+section#welcome> div#chamada > p{
+    text-align: justify;
+    margin-top: 5px;
 }
