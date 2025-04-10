@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 120px 1fr 80px;
+    grid-template-columns: 1fr 120px;
+    grid-template-areas: "cabecalho logo" "conteudo conteudo" "rodape rodape";
+}
+
+.cabecalho{
+    grid-area: cabecalho;
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: start;
+    align-items: center;
+}
+
+.cabecalho>h1{
+    margin-left: 30px;
+    font-size: 3.4rem;
+}
+
+.cabecalho>p{
+    width: 380px;
+    margin-left:  30px;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.logo{
+    grid-area: logo;
+    background-image: url(imagens/tecnologia-250px.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.conteudo {
+    grid-area: conteudo;
+    display: flex;
+    background-color: #bbb;
+    justify-content: center;
+    align-items: center;
+}
+
+.bola{
+
+    height: 350px;
+    width: 350px;
+    background-color: rgb(28, 212, 0);
+    box-shadow: 0px 0px 18px 2px rgba(0, 0, 0, 0.436);
+    border-radius: 50%;
+}
+
+.rodape{
+    grid-area: rodape;
+    background-color: white;
+}
