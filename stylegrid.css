@@ -153,13 +153,10 @@ body{
     border-radius: 6px 11px;
 }
 
-.apresentacao{
-    display: flex;
-    justify-content: space-around;
-}
+
 
 #foto{
-    display: block;
+    display: none;
     width: 300px;
     height: 300px;
     margin: 20px ;

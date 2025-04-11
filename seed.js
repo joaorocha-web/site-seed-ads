@@ -12,7 +12,7 @@ function mostrarFotoCp() {
         foto.style.backgroundSize = "cover";
         foto.style.backgroundPosition = "center";
     } else{
-        foto.style.backgroundImage = "url('imagens/foto-pedrao-600px.jpg')";
+        foto.style.backgroundImage = "url('imagens/foto-joao-300px.jpg')";
         foto.style.backgroundSize = "cover";
         foto.style.backgroundPosition = "center";
     }
@@ -32,7 +32,7 @@ function mostrarFotoGt(){
         foto.style.backgroundSize = "cover";
         foto.style.backgroundPosition = "center";
     } else{
-        foto.style.backgroundImage = "url('imagens/foto-pedrao-600px.jpg')";
+        foto.style.backgroundImage = "url('imagens/foto-luis-600px.jpg')";
         foto.style.backgroundSize = "cover";
         foto.style.backgroundPosition = "center";
     }
