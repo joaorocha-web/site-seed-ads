@@ -118,7 +118,7 @@ body{
 
 .profissionais{
     width: 700px;
-    max-height: 500px;
+    min-height: 500px;
     background-color: rgba(0, 0, 0, 0.804);
     margin-bottom: 50px;
     padding: 10px;
@@ -153,10 +153,16 @@ body{
     border-radius: 6px 11px;
 }
 
+.apresentacao{
+    display: flex;
+    justify-content: space-around;
+}
+
 #foto{
+    display: block;
     width: 300px;
     height: 300px;
-    margin: 20px auto;
+    margin: 20px ;
     background-color: #222;
     border-radius: 50%;
 }
