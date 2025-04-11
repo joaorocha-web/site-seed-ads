@@ -117,10 +117,47 @@ body{
 }
 
 .profissionais{
-    max-width: 600px;
+    width: 700px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.804);
+    margin-bottom: 50px;
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+}
+
+.profissionais > h2{
+    font-size: 2.2rem;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.profissionais > p{
+    text-align: center;
+    padding: 2px 8px;
+}
+
+.botoes{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.profissionais button{
+    margin-top: 15px;
+    padding: 8px;
+    font-size: 1rem;
+    background-image: linear-gradient(60deg, #29074B, #7D1665);
+    color: white;
+    border: 0px ;
+    border-radius: 6px 11px;
+}
+
+#foto{
+
 }
 
 .rodape{
     grid-area: rodape;
-    background-color: white;
+    
 }
