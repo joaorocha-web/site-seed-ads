@@ -118,7 +118,7 @@ body{
 
 .profissionais{
     width: 700px;
-    height: 500px;
+    max-height: 500px;
     background-color: rgba(0, 0, 0, 0.804);
     margin-bottom: 50px;
     padding: 10px;
@@ -154,7 +154,11 @@ body{
 }
 
 #foto{
-
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    background-color: #222;
+    border-radius: 50%;
 }
 
 .rodape{
