@@ -6,9 +6,7 @@
 }
 
 body{
-    background-image: url(imagens/sky-purple-simple-circle-atmosphere-lens-flare-534648-wallhere.com.jpg);
-    background-position: center center ;
-    background-size: cover;
+    background-color: #000000;
     height: 100vh;
     display: grid;
     grid-template-rows: 120px 1fr 80px;
@@ -37,21 +35,17 @@ body{
     font-size: 1.2rem;
 }
 
-.logo{
-    grid-area: logo;
-    background-image: url(imagens/seedads-logo-modificado-170px.jpg);
-    background-size: cover;
-    background-position: center;
-}
 
 .conteudo {
     grid-area: conteudo;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-image: url(imagens/sky-purple-simple-circle-atmosphere-lens-flare-534648-wallhere.com.jpg);
+    background-position: center center ;
+    background-size: cover;
+    
 }
 
 .inicio {
+    padding-top: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "formulario sobre-nos";
@@ -62,7 +56,7 @@ body{
 .formulario{
     grid-area: formulario;
     margin: auto;
-    width: 350px;
+    width: 400px;
     max-height: 300px;
     background-color: white;
     padding: 10px;
@@ -115,6 +109,16 @@ body{
     text-align: justify;
 }
 
+.meio{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profissionais{
+    max-width: 600px;
+}
 
 .rodape{
     grid-area: rodape;
