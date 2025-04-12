@@ -17,7 +17,7 @@ body{
 .cabecalho{
     grid-area: cabecalho;
     display: flex;
-    
+    background-image:linear-gradient(to top, #1B0333, #4D0F60);
     color: white;
     justify-content: start;
     align-items: center;
@@ -41,6 +41,7 @@ body{
     background-image: url(imagens/sky-purple-simple-circle-atmosphere-lens-flare-534648-wallhere.com.jpg);
     background-position: center center ;
     background-size: cover;
+    
     
 }
 
@@ -118,12 +119,13 @@ body{
 
 .profissionais{
     width: 700px;
-    min-height: 500px;
-    background-color: rgba(0, 0, 0, 0.804);
+    min-height: 270px;
+    background-color: rgba(0, 0, 0, 0.746);
     margin-bottom: 50px;
     padding: 10px;
     color: white;
     border-radius: 20px;
+    box-shadow: 3px 4px 15px 1px rgb(0, 0, 0);
 }
 
 .profissionais > h2{
@@ -145,16 +147,34 @@ body{
 }
 .profissionais button{
     margin-top: 15px;
-    padding: 8px;
-    font-size: 1rem;
+    padding: 12px;
+    font-size: 1.4rem;
     background-image: linear-gradient(60deg, #29074B, #7D1665);
     color: white;
     border: 0px ;
     border-radius: 6px 11px;
 }
 
+.profissionais button:hover{
+    background-image: linear-gradient(60deg,  #7D1665, #29074B); 
+}
 
+.apresentacao{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.descricao{
+    width: 50%;
+    text-align: justify;
+    padding: 10px;
+}
+
+.descricao h2{
+    color:#7D1665 ;
+}
 #foto{
     display: none;
     width: 300px;
@@ -162,6 +182,7 @@ body{
     margin: 20px ;
     background-color: #222;
     border-radius: 50%;
+    filter: grayscale(100%);
 }
 
 .rodape{
