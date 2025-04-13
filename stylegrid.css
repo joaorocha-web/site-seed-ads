@@ -20,7 +20,7 @@ body{
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 70px;
     grid-template-areas: "titulo frase menu";
-    background-image:linear-gradient(to top, #1B0333, #4D0F60);
+    background-image:linear-gradient(to top, #1B0333 ,#1B0333, #4D0F60);
     color: white;
     justify-content: start;
     align-items: center;
@@ -195,6 +195,39 @@ body{
     background-color: #222;
     border-radius: 50%;
     filter: grayscale(100%);
+}
+
+.fim{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.vitrine{
+    width: 50%;
+    margin: 50px 25px;
+    padding: 15px;
+    background-color: white;
+    color: black;
+    text-align: justify;
+    border-radius: 10px;
+    box-shadow: 2px 5px 9px rgb(0, 0, 0);
+
+}
+
+.vitrine h2{
+    font-size: 2.3rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.vitrine p{
+    line-height: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.fim img{
+    width: 45%;
 }
 
 .rodape{
