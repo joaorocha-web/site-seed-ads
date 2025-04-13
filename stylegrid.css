@@ -11,12 +11,15 @@ body{
     display: grid;
     grid-template-rows: 120px 1fr 80px;
     grid-template-columns: 1fr ;
-    grid-template-areas: "cabecalho cabecalho" "conteudo conteudo" "rodape rodape";
+    grid-template-areas: "cabecalho" "conteudo" "rodape";
 }
 
 .cabecalho{
     grid-area: cabecalho;
-    display: flex;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 70px;
+    grid-template-areas: "titulo frase menu";
     background-image:linear-gradient(to top, #1B0333, #4D0F60);
     color: white;
     justify-content: start;
@@ -24,16 +27,25 @@ body{
 }
 
 .cabecalho>h1{
+    grid-area: titulo;
     margin-left: 30px;
     font-size: 3.4rem;
 }
 
 .cabecalho>p{
+    grid-area: frase;
     width: 380px;
-    margin-left:  30px;
-    text-align: left;
+    margin-left:  170px;
     font-size: 1.2rem;
+    text-align: right;
 }
+
+.cabecalho .material-symbols-outlined{
+    font-size: 2.5rem;
+    text-align: right;
+    margin-right: 15px;
+}
+
 
 
 .conteudo {
@@ -187,5 +199,16 @@ body{
 
 .rodape{
     grid-area: rodape;
-    
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.rodape a{
+    text-decoration: none;
+    color: white;
+}
+
+.rodape a:hover{
+    background-color: #444;
 }
