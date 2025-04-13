@@ -128,7 +128,7 @@ body{
     padding: 8px;
     font-size: 1rem;
     background-image: linear-gradient(60deg, var(--cor1), var(--cor2));
-    color: white;
+    color: #000;
     border: 0px ;
     border-radius: 6px 11px;
 }
