@@ -226,6 +226,26 @@ body{
     margin-bottom: 10px;
 }
 
+.whatsapp{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.vitrine a{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(60deg, #29074B, #7D1665);
+    border-radius: 8px;
+}
+
+.vitrine a:hover{
+    background-image: linear-gradient(-60deg, #29074B, #7D1665);
+}
+
 .fim img{
     width: 45%;
 }
