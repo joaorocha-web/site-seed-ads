@@ -16,10 +16,12 @@
 body{
     background-color: #000000;
     height: 100vh;
+    width: 100vw;
     display: grid;
     grid-template-rows: 120px 1fr 80px;
     grid-template-columns: 1fr ;
     grid-template-areas: "cabecalho" "conteudo" "rodape";
+    overflow-x: hidden;
 }
 
 .cabecalho{
@@ -73,6 +75,10 @@ body{
     grid-template-areas: "formulario sobre-nos";
     gap: 80px;
     
+}
+
+.efeito-inicio, .efeito-profissionais, .efeito-vitrine, .efeito-img{
+    visibility: hidden;
 }
 
 .formulario{
@@ -238,6 +244,7 @@ body{
     text-align: justify;
     border-radius: 10px;
     box-shadow: 2px 5px 9px rgb(0, 0, 0);
+    
 
 }
 
@@ -273,7 +280,7 @@ body{
     background-image: linear-gradient(-60deg, #29074B, #7D1665);
 }
 
-.fim img{
+.img{
     width: 45%;
 }
 
