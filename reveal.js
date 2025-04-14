@@ -13,13 +13,13 @@ revelar.reveal('.efeito-profissionais', {
 
 revelar.reveal('.efeito-vitrine', {
     duration: 2000,
-    distance: '100px',
-    delay: 250
+    distance: '400px',
+    delay: 500
 })
 
 revelar.reveal('.efeito-img', {
     duration: 2000,
     distance: '100px',
     origin: 'right',
-    delay: 1000
+    delay: 1500
 })
