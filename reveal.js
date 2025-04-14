@@ -12,14 +12,14 @@ revelar.reveal('.efeito-profissionais', {
 })
 
 revelar.reveal('.efeito-vitrine', {
-    duration: 2000,
-    distance: '400px',
-    delay: 500
+    duration: 2500,
+    distance: '100px',
+    origin: 'left',
 })
 
 revelar.reveal('.efeito-img', {
     duration: 2000,
     distance: '100px',
     origin: 'right',
-    delay: 1500
+    delay: 1000
 })
