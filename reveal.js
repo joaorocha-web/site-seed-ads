@@ -5,6 +5,18 @@ revelar.reveal('.efeito-inicio',{
     distance: '90px' 
 })
 
+revelar.reveal('.efeito-hero',{
+    duration: 2000,
+    distance: '90px' 
+})
+
+revelar.reveal('.efeito-pc-img',{
+    duration: 2000,
+    distance: '120px', 
+    origin: 'right',
+    delay: 500
+})
+
 revelar.reveal('.efeito-profissionais', {
     duration: 2000,
     distance: '200px',

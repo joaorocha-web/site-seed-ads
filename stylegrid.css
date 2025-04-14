@@ -75,15 +75,62 @@ body{
     margin-right: 15px;
 }
 
-
-
-
 .conteudo {
     grid-area: conteudo;
     background-color: #000000;
     background-position: center center ;
     background-size: cover;
     background-attachment: fixed;
+}
+
+.bloco1{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "hero pc-img";
+    gap: 80px;
+    color: white;
+}
+
+.hero{
+    grid-area: hero;
+    padding: 20px;
+    margin-left: 20px;
+    margin-top: 60px;
+}
+
+.hero h2{
+    font-size: 2.2rem;
+    padding-top: 15px;
+    padding-bottom: 4px;
+}
+
+.hero p{
+    line-height: 1.2rem;
+    margin-bottom: 45px;
+}
+
+.hero a{
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(60deg, var(--cor3), var(--cor1));
+    border-radius: 6px;
+    padding: 10px;
+   
+}
+
+.hero a:hover{
+    background-image: linear-gradient(-60deg, var(--cor3), var(--cor1));
+}
+
+.pc-img{
+    margin-bottom: 0px;
+    grid-area: pc-img;
+}
+
+.pc-img img{
+    width: 600px;
+    height: 470px;
 }
 
 .inicio {
@@ -95,7 +142,7 @@ body{
     
 }
 
-.efeito-inicio, .efeito-profissionais, .efeito-vitrine, .efeito-img{
+.efeito-inicio, .efeito-profissionais, .efeito-vitrine, .efeito-img, .efeito-hero, .efeito-pc-img{
     visibility: hidden;
 }
 
