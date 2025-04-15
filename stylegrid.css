@@ -7,6 +7,7 @@
     --cor2:  #66cc00;
     --cor3: #14500d;
     --cor4: #7D1665;
+    --cor5: #0d3109;
 }
 
 *{
@@ -187,85 +188,10 @@ body{
     color: var(--cor1);
 }
 
-.inicio {
-    margin-top: 100px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "formulario sobre-nos";
-    gap: 80px;
-    
-}
-
 .efeito-inicio, .efeito-profissionais, .efeito-vitrine, .efeito-img, .efeito-hero, .efeito-pc-img, .item{
     visibility: hidden;
 }
 
-.formulario{
-    grid-area: formulario;
-    margin: auto;
-    width: 400px;
-    max-height: 300px;
-    background-color: white;
-    padding: 10px;
-    color: #121212;
-    border-radius: 8px 15px;
-    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.803);
-}
-
-.formulario:hover{
-    border: 1px solid var(--cor1);
-}
-
-.formulario h2{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.formulario input{
-    margin-top: 10px ;
-    font-size: 1.3rem;
-}
-
-.formulario button{
-    margin-top: 15px;
-    padding: 8px;
-    font-size: 1rem;
-    background-image: linear-gradient(60deg, var(--cor3), var(--cor1));
-    color: #fff;
-    border: 0px ;
-    border-radius: 6px 11px;
-}
-
-.formulario button:hover{
-    background-image: linear-gradient(-60deg, var(--cor3), var(--cor1)); 
-}
-
-.sobre-nos{
-    padding: 15px;
-    width: 400px;
-    grid-area: sobre-nos;
-    background-color: rgba(255, 255, 255, 0.084);
-    color: white;
-    border-radius: 20px;
-    
-}
-
-.sobre-nos:hover{
-    background-color: #99ff0022;
-}
-
-.sobre-nos > h2{
-    font-weight: 600;
-    padding-bottom: 15px;
-    font-size: 2rem;
-    text-shadow: 1px 2px 4px black;
-}
-
-.sobre-nos > p{
-    font-family: 'Inter', sans-serif;
-    line-height: 1.3rem;
-    text-align: justify;
-}
 
 .meio{
     margin: 100px 0px;
@@ -310,6 +236,7 @@ body{
     margin-top: 15px;
     padding: 12px;
     font-size: 1.4rem;
+    font-weight: 600;
     background-image: linear-gradient(60deg, var(--cor4), var(--cor4));
     color: white;
     border: 0px ;
@@ -348,7 +275,8 @@ body{
 }
 
 .fim{
-    margin-bottom: 100px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -412,6 +340,82 @@ body{
 .img{
     width: 45%;
 }
+
+.inicio {
+    margin-top: 100px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(imagens/fundo-formulario.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+}
+
+.inicio >h2{
+    color: #fff;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.inicio >p{
+    color: #fff;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.formulario{
+    margin: 80px auto;
+    min-width: 450px;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    border-radius: 8px 15px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.803);
+}
+
+.formulario:hover{
+    border: 1px solid var(--cor1);
+}
+
+.formulario h2{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.formulario label{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.formulario input{
+    margin-top: 10px ;
+    border-radius: 5px;
+    background-color: #222;
+    border: none;
+    margin-bottom: 15px;
+    width: 280px;
+    height: 40px;
+}
+
+.formulario button{
+    margin-top: 15px;
+    padding: 8px;
+    font-size: 1rem;
+    width: 90px;
+    background-image: linear-gradient(60deg, var(--cor3), var(--cor1));
+    color: #fff;
+    border: 0px ;
+    border-radius: 6px 11px;
+    margin-bottom: 15px;
+}
+
+.formulario button:hover{
+    background-image: linear-gradient(-60deg, var(--cor3), var(--cor1)); 
+}
+
 
 .rodape{
     grid-area: rodape;
