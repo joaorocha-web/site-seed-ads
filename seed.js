@@ -103,7 +103,7 @@ const enviar = (event) => {
             'Accept': 'application/json',
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify({nome, empresa, contato, email}),
+        body: JSON.stringify({Nome: nome, Empresa: empresa, Contato: contato, Email: email}),
 
     }).then(() => removeCarregar());
 }
