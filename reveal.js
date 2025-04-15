@@ -10,6 +10,26 @@ revelar.reveal('.efeito-hero',{
     distance: '90px' 
 })
 
+revelar.reveal('.efeito-item1', {
+    duration: 2000,
+    distance: '90px'
+})
+revelar.reveal('.efeito-item2', {
+    duration: 2000,
+    distance: '90px',
+    delay: 500
+})
+revelar.reveal('.efeito-item3', {
+    duration: 2000,
+    distance: '90px',
+    delay: 1000
+})
+revelar.reveal('.efeito-itemrestante', {
+    duration: 2000,
+    distance: '90px',
+    delay: 1500
+})
+
 revelar.reveal('.efeito-pc-img',{
     duration: 2000,
     distance: '120px', 

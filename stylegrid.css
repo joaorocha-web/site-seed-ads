@@ -19,6 +19,9 @@
     color: var(--cor1);
 }
 
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: #000000;
     height: 100vh;
@@ -133,6 +136,57 @@ body{
     height: 470px;
 }
 
+.bloco2{
+    margin-top: 100px;
+}
+
+.bloco2 > h2{
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+
+}
+.serviços {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.serviços > div{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 300px;
+    height: 350px;
+    color: white;
+    margin-right: 80px;
+    margin-bottom: 60px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #1a1a1a;
+    box-shadow: 3px 4px 5px var(--cor2);
+}
+
+.serviços > div:hover{
+    background-color: #212121;
+    box-shadow: 7px 9px 5px var(--cor2);
+    transform: scale(1.02);
+    transition-duration: .5s;
+}
+
+.item >p{
+    text-align: center;
+}
+
+.material-symbols-outlined{
+    font-size: 7rem;
+    margin-bottom: 40px;
+    padding-top: 30px;
+    color: var(--cor1);
+}
+
 .inicio {
     margin-top: 100px;
     display: grid;
@@ -142,7 +196,7 @@ body{
     
 }
 
-.efeito-inicio, .efeito-profissionais, .efeito-vitrine, .efeito-img, .efeito-hero, .efeito-pc-img{
+.efeito-inicio, .efeito-profissionais, .efeito-vitrine, .efeito-img, .efeito-hero, .efeito-pc-img, .item{
     visibility: hidden;
 }
 
@@ -332,6 +386,13 @@ body{
     justify-content: end;
     align-items: center;
 }
+
+
+.whatsapp .material-symbols-outlined{
+    font-size: 1rem;
+    margin: 0px;
+    padding: 0px;
+}
 .vitrine a{
     display: flex;
     align-items: center;
@@ -345,7 +406,7 @@ body{
 }
 
 .vitrine a:hover{
-    background-image: linear-gradient(60deg, var(--cor1), var(--cor3));
+    background-image: linear-gradient(-60deg, var(--cor1), var(--cor3));
 }
 
 .img{
