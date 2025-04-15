@@ -69,5 +69,11 @@ function mostrarFotoMk(){
     }
 }
 
-//foto.setAttribute ('src', 'imagens/foto-joao-300px.jpg') 
-//document.getElementById('foto').appendChild(f
+// Agora colocaremos uma resposta que aparecerá depois que a pessoa concluir o  formulário
+
+let enviar = document.getElementById('enviar')
+enviar.addEventListener('click', resposta)
+
+function resposta(){
+   enviar.style.background='red'
+}
