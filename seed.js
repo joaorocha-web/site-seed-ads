@@ -71,9 +71,41 @@ function mostrarFotoMk(){
 
 // Agora colocaremos uma resposta que aparecerá depois que a pessoa concluir o  formulário
 
-let enviar = document.getElementById('enviar')
-enviar.addEventListener('click', resposta)
+const botao = document.getElementById('botao');
 
-function resposta(){
-   enviar.style.background='red'
+const addCarregar = () => {
+    botao.innerHTML ='<img src="imagens/load-transparente-50px.png" class="loading">'
 }
+
+
+const removeCarregar = () => {
+    botao.innerHTML ='Enviado'
+    botao.style.background= '#99ff00'
+    botao.style.color = '#000000'
+    const res = document.getElementById('res')
+    res.innerHTML ='Os seus dados foram salvos corretamente! <br> Entraremos em contato pelo número do celular.'
+}
+
+
+const enviar = (event) => {
+    event.preventDefault();
+    addCarregar();
+
+    const nome = document.querySelector('input[name=nome]').value;
+    const empresa = document.querySelector('input[name=empresa]').value;
+    const contato = document.querySelector('input[name=contato]').value;
+    const email = document.querySelector('input[name=email]').value;
+
+    fetch('https://api.sheetmonkey.io/form/bSkUwMgw89mYa59Uyhttdn', {
+
+        method: 'post',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({nome, empresa, contato, email}),
+
+    }).then(() => removeCarregar());
+}
+
+document.getElementById('form1').addEventListener('submit', enviar);

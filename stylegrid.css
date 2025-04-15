@@ -32,6 +32,7 @@ body{
     grid-template-columns: 1fr ;
     grid-template-areas: "cabecalho" "conteudo" "rodape";
     overflow-x: hidden;
+    overflow-y: visible;
 }
 
 .cabecalho{
@@ -394,6 +395,7 @@ body{
     margin-top: 10px ;
     border-radius: 5px;
     background-color: #222;
+    color: #ccc;
     border: none;
     margin-bottom: 15px;
     width: 280px;
@@ -402,10 +404,10 @@ body{
 
 .formulario button{
     margin-top: 15px;
-    padding: 8px;
+    padding: 4px;
     font-size: 1rem;
     width: 90px;
-    background-image: linear-gradient(60deg, var(--cor3), var(--cor1));
+    background-color: red;
     color: #fff;
     border: 0px ;
     border-radius: 6px 11px;
@@ -416,6 +418,28 @@ body{
     background-image: linear-gradient(-60deg, var(--cor3), var(--cor1)); 
 }
 
+.loading{
+    width: 25px;
+    animation: rodar .9s infinite linear ;
+}
+
+@keyframes rodar {
+
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+
+}
+
+#res{
+    display: block;
+    font-size: .8rem;
+    font-weight: 200;
+}
 
 .rodape{
     grid-area: rodape;

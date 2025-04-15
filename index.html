@@ -117,16 +117,23 @@
             
             <section class="formulario">
                 <h2>Preencha com os seus dados:</h2>
-                <form action="" method="post">
+                <form id="form1">
                     <p><label for="inome">Nome: </label></p>
-                    <p><input type="text" name="nome" id="inome" placeholder="Nome Completo"></p>
+                    <p><input type="text" name="nome" id="inome" placeholder="Nome Completo" required></p>
+
                     <p><label for="iemp">Nome da Empresa:</label></p>
-                    <p><input type="text" name="emp" id="iemp" placeholder="Ex: Seed Ads"></p>
+                    <p><input type="text" name="empresa" id="iemp" placeholder="Ex: Seed Ads" ></p>
+
                     <p><label for="inum">Número de contato:</label></p>
-                    <p><input type="tel" name="num" id="inum" placeholder="Ex (32) 991263739"></p>
+                    <p><input type="tel" name="contato" id="inum" placeholder="Ex (32) 991263739" ></p>
+
                     <p><label for="iemail">Email:</label></p>
-                    <p><input type="email" name="email" id="iemail" placeholder="Ex: seedads@hotmail.com"></p>
-                    <button id="enviar">Enviar</button>
+                    <p><input type="email" name="email" id="iemail" placeholder="Ex: seedads@hotmail.com" required></p>
+
+                    <button id="botao">
+                        Enviar
+                    </button>
+                    
                     <span id="res"></span>
                 </form>
             </section>
