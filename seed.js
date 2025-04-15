@@ -93,8 +93,10 @@ const enviar = (event) => {
 
     const nome = document.querySelector('input[name=nome]').value;
     const empresa = document.querySelector('input[name=empresa]').value;
-    const contato = document.querySelector('input[name=contato]').value;
+    const contatoBruto = document.querySelector('input[name=contato]').value; //com formatação
     const email = document.querySelector('input[name=email]').value;
+
+    const contato = contatoBruto.replace(/\D/g, '');//sem formatação
 
     fetch('https://api.sheetmonkey.io/form/bSkUwMgw89mYa59Uyhttdn', {
 
