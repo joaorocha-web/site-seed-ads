@@ -1,6 +1,6 @@
 window.revelar = ScrollReveal({reset:true})
 
-revelar.reveal('.efeito-inicio',{
+revelar.reveal('.efeito-bloco5',{
     duration: 1000,
     distance: '90px' 
 })
